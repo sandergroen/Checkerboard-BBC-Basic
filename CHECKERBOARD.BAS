@@ -8,11 +8,11 @@
    80 numColors = 64
    90 xblocks = INT(width/numColors)
   100 yblocks = INT(heigth/numColors)
-  110 FOR Y=0 TO (heigth - 1)
+  110 FOR Y=0 TO (heigth - 1) STEP 5.12
   120   IF ycount = yblocks THEN index = (index+1) MOD numColors
   130   IF ycount = yblocks THEN ycount = 0
   140   ycounter = ycounter + 1
-  150   FOR X=0 TO (width - 1)
+  150   FOR X=0 TO (width - 1) STEP 4
   160     IF xcount = xblocks THEN index = (index+1) MOD numColors
   170     IF xcount = xblocks THEN xcount = 0
   180     xcount = xcount + 1
